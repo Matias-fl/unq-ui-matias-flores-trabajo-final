@@ -1,5 +1,7 @@
+import Home from './pages/Home.jsx'
+
 function App() {
-  return null
+  return <Home />
 }
 
 export default App

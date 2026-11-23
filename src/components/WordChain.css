@@ -1,0 +1,65 @@
+.word-chain {
+  padding: 1rem;
+  border: 1px solid #d5dfe9;
+  border-radius: 0.75rem;
+  background: #fff;
+  overflow-wrap: anywhere;
+}
+
+.word-chain h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.word-chain p,
+.word-chain ol {
+  margin: 0.5rem 0 0;
+}
+
+.word-chain p {
+  color: #4c6074;
+}
+
+.word-tiles {
+  --tile-border: #a9b9c9;
+  --tile-first: #2455a4;
+  --tile-last: #785400;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.home .word-tiles {
+  --tile-border: #5a5852;
+  --tile-first: #86bcff;
+  --tile-last: #ffbc40;
+
+  justify-content: center;
+}
+
+.word-tiles li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+
+.word-tiles__word {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--tile-border);
+  border-radius: 0.6rem;
+  font-weight: 600;
+}
+
+.word-tiles__first {
+  color: var(--tile-first);
+}
+
+.word-tiles__last {
+  color: var(--tile-last);
+}
