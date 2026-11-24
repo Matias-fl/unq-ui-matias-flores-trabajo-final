@@ -34,11 +34,15 @@
   overflow-wrap: anywhere;
 }
 
-.home .word-tiles {
+.home .word-tiles,
+.game .word-tiles {
   --tile-border: #5a5852;
   --tile-first: #86bcff;
   --tile-last: #ffbc40;
 
+}
+
+.home .word-tiles {
   justify-content: center;
 }
 
