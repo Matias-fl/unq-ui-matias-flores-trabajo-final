@@ -23,11 +23,7 @@ function WordTiles({ words, label }) {
       {words.map((word, index) => (
         <li key={word}>
           {index > 0 && <span aria-hidden="true">→</span>}
-          <span className="word-tiles__word">
-            <span className="word-tiles__first">{word[0]}</span>
-            {word.slice(1, -1)}
-            <span className="word-tiles__last">{word.slice(1).at(-1)}</span>
-          </span>
+          <span className="word-tiles__word">{word}</span>
         </li>
       ))}
     </ol>

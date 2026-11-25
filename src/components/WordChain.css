@@ -22,8 +22,6 @@
 
 .word-tiles {
   --tile-border: #a9b9c9;
-  --tile-first: #2455a4;
-  --tile-last: #785400;
 
   display: flex;
   flex-wrap: wrap;
@@ -37,9 +35,6 @@
 .home .word-tiles,
 .game .word-tiles {
   --tile-border: #5a5852;
-  --tile-first: #86bcff;
-  --tile-last: #ffbc40;
-
 }
 
 .home .word-tiles {
@@ -58,12 +53,4 @@
   border: 1px solid var(--tile-border);
   border-radius: 0.6rem;
   font-weight: 600;
-}
-
-.word-tiles__first {
-  color: var(--tile-first);
-}
-
-.word-tiles__last {
-  color: var(--tile-last);
 }
