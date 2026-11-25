@@ -47,7 +47,7 @@ export default function Game({ gameId, playerName, onFinish, onReplay, onBack })
           />
         ) : (
           <>
-            <GameStats score={score} secondsLeft={secondsLeft} />
+            <GameStats score={score} lastWord={words.at(-1)} secondsLeft={secondsLeft} />
             <WordForm
               input={input}
               error={error}

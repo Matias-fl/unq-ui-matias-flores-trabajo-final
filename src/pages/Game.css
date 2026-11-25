@@ -53,6 +53,48 @@
   margin-bottom: 0.5rem;
 }
 
+.game__stats .game__score {
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.game__score-gain {
+  position: absolute;
+  inset-inline-start: 100%;
+  bottom: 0.15em;
+  margin-inline-start: 0.45rem;
+  color: #83de9e;
+  font-size: 0.95rem;
+}
+
+.game__timer {
+  --timer-color: #86bcff;
+}
+
+.game__stats .game__timer--low {
+  --timer-color: #ffb536;
+  border-color: var(--timer-color);
+  color: var(--timer-color);
+}
+
+.game__timer-track,
+.game__timer-track span {
+  display: block;
+  border-radius: 1rem;
+}
+
+.game__timer-track {
+  height: 0.35rem;
+  margin-top: 0.45rem;
+  background: #41413e;
+}
+
+.game__timer-track span {
+  height: 100%;
+  background: var(--timer-color);
+}
+
 .game__form strong {
   color: #ffbc40;
 }
